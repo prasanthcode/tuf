@@ -1,0 +1,157 @@
+.app {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 20%;
+  justify-content: space-between;
+}
+.link {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+}
+
+
+
+.code_form {
+  margin: 0 auto;
+  width: 80%;
+  /* padding: 20px 30px; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.code_form label {
+  font-weight: 500;
+}
+#code {
+  display: block;
+  width: 100%;
+  height: 60vh;
+  font-size: 14px;
+  color: #3d3d3d;
+  outline: none;
+  line-height: 1.5;
+  resize: none; /* Disable textarea resizing */
+}
+#input {
+  border-color: #cfcfcf;
+  outline: none;
+}
+.code_form input[type="text"] {
+  background-color: inherit;
+  padding: 5px;
+  border-width: 0 0 1px 0;
+  outline: none;
+}
+.form_header {
+  padding: 10px 30px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  justify-content: space-between;
+}
+.form_header select {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid rgb(143, 143, 143);
+  background-color: white;
+  outline: none;
+}
+.code_submit {
+  margin:5px 30px;
+  
+}
+.code_submit label {
+  display: block;
+  color: #666666;
+
+  padding-bottom: 5px;
+}
+.input_submit {
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_submit input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #ec6c04;
+}
+
+
+
+/* table */
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse:collapse;  
+  margin-bottom: 20px;
+  color: #696969;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+th {
+  text-align: left;
+  color: #858585;
+  padding: 16px 32px;
+  
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px 32px;
+  border-width: 0 0 1px 0;
+  max-width: 200px;
+}
+
+.loading-state {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  border-top-color: orange;
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
